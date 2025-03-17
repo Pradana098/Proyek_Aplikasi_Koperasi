@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->enum('role', ['pengurus', 'pengawas'])->after('password')->default('pengurus');
+        Schema::table('pengawas', function (Blueprint $table) {
+            $table->string('password')->after('email'); // Tambahkan kolom password
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('role');
+        Schema::table('pengawas', function (Blueprint $table) {
+            $table->dropColumn('password'); // Hapus kolom jika rollback
         });
     }
 };
