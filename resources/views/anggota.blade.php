@@ -8,9 +8,9 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card p-3 bg-danger text-white">
-                <h5>Siti Rahmawati</h5>
+                <h5>Dimas Januar Pradana</h5>
                 <p>Status: Aktif</p>
-                <p>Email: siti@example.com</p>
+                <p>Email: dimas@example.com</p>
             </div>
         </div>
     </div>
